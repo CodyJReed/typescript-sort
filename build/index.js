@@ -1,4 +1,8 @@
 "use strict";
-console.log("Hi there");
-var logSomething = function () { return console.log("something"); };
-logSomething();
+var Sorter = /** @class */ (function () {
+    function Sorter(collection) {
+        this.collection = collection;
+    }
+    return Sorter;
+}());
+var sorter = new Sorter([3, 5, 7, 8]);
